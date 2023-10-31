@@ -1,0 +1,22 @@
+header {
+    text-align: center;
+}
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+}
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+.hero {
+    background-image: url('../img/banner.jpg');
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

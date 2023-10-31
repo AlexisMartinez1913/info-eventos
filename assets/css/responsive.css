@@ -1,0 +1,23 @@
+@media(min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 768px) {
+    .nav-principal {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
+}

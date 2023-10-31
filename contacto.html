@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Registrate</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Info Eventos <span>Valle Aburrá</span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Registrate</a>
+        </nav>
+
+    </div>
+    
+
+
+
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Registrate</h2>
+        <p>Info Eventos Valle Aburrá, el lugar donde la cultura cobra vida en el Valle de Aburrá. Regístrate y sé parte de nuestra comunidad cultural. Aquí, encontrarás una amplia gama de eventos y experiencias que enriquecerán tu vida y te conectarán con la riqueza cultural de la región.</p>
+        <p> <strong>Membresía Mensual:</strong> Disfruta de todos los beneficios de la membresía por un costo mensual que no supera los <em>$100,000 COP.</em></p>
+        <p> <strong>Pago por Evento: </strong> Paga por evento individualmente con un límite de <em>$200,000 COP</em> por transacción. Si la oferta está asociada a una organización sin ánimo de lucro o de acción cultural, disfruta de un descuento del 30%.</p>
+
+        <form action="" class="formulario">
+            
+            <!-- <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input  id="nombre" type="text" placeholder="Coloca tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" placeholder="Tu Asunto">
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Tu Email">
+                </div>
+                <div class="campo">
+                    <label for="tel">Teléfono:</label>
+                    <input id="tel" type="tel" placeholder="Tu Télefono">
+                </div>
+                <div class="campo">
+                    <label for="mens">Mensaje:</label>
+                    <textarea  id="" cols="20" rows="10"></textarea>
+                </div>
+            </fieldset> -->
+
+            <!-- <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select  id="pais">
+                        <option value="">-- Seleccione</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BL">Bolivia</option>
+                        <option value="BR">Brazil</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+            </fieldset> -->
+
+            <!-- <fieldset>
+                <legend>Info Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente: </label>
+                    <input id="cliente" type="radio" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor: </label>
+                    <input id="proveedor" type="radio" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoría De Interes</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Teatros"></option>
+                        <option value="Restaurante"></option>
+                        <option value="Cultura"></option>
+                        <option value="Cine"></option>
+                    </datalist>
+                </div>
+            </fieldset> -->
+
+            <fieldset>
+                <legend>Regístrate</legend>
+                <div class="campo">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Email: </label>
+                    <input id="correo" type="email" placeholder="Tu Correo:" onchange="validarEmail()" required>
+                    <div id="email-validacion" class="validacion"></div>
+                </div>
+                <div class="campo">
+                    <label for="doc">Documento:</label>
+                    <input id="doc" type="text" placeholder="Tu documento de identidad" required>
+                </div>
+                <div class="campo">
+                    <label for="membresia">Membresia: </label>
+                    <input type="radio" name="tipo-usuario" required>
+                </div>
+                <div class="campo">
+                    <label for="evento">Pago Por Evento</label>
+                    <input type="radio" name="tipo-usuario">
+                </div>
+                <div class="campo">
+                    <label for="ps">Contraseña:</label>
+                    <input id="ps" type="password" required onchange="validarPassword()">
+                    <div id="password-validacion" class="validacion"></div>
+                </div>
+            </fieldset>
+
+
+            <!-- <fieldset>
+                <legend>Inicia Sesión</legend>
+                <div class="campo">
+                    <label for="email-inicio">Email: </label>
+                    <input type="email"  id="email-inicio">
+                    
+                </div>
+                <div class="campo">
+                    <label for="password">Contraseña: </label>
+                    <input id="password" type="password">
+                </div>
+            </fieldset> -->
+
+            <div class="botn">
+                <input type="submit" value="Iniciar Sesión" class="btn">
+            </div>
+            <div>
+                <p class="inicio"><a href="login.html">¿Ya Estas Registrado? Inicia Sesión.</a> </p>
+            </div>
+
+        </form>
+        
+        
+    </main>
+    <footer class="side-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorias</h3>
+                <nav class="footer-menu">
+                    <a href="#">Teatros</a>
+                    <a href="#">Restaurantes</a>
+                    <a href="#">Hoteles</a>
+                    <a href="#">Centros Comerciales</a>
+                    <a href="#">Academias</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politica Y Privacidad</a>
+                    <a href="#">Terminos del servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en linea</a>
+                    <a href="#">Confianza y seguridad</a>
+                    
+                </nav>
+            </div>
+            <div>
+                <h3>Desarrollado Por</h3>
+                <nav class="footer-menu">
+                    <a href="#">Saul Molina</a>
+                    <a href="#">Jhony Alexis Martínez</a>
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+        <p class="copyright">Todos los derechos reservados.</p>
+        
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

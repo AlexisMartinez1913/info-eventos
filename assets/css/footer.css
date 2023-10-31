@@ -1,0 +1,47 @@
+
+.side-footer {
+    margin-top: 5rem;
+    padding: 5rem;
+    border-top: 1px solid #e1e1e1;
+    
+}
+.side-footer h3 {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .side-footer h3 {
+        text-align: left;
+    }
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.grid-footer > div {
+    margin-bottom: 2rem;
+
+}
+@media (min-width: 768px) {
+    .grid-footer > div {
+        margin: 0;
+    }
+}
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+
+.footer-menu a {
+    display: block;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .footer-menu a {
+        text-align: left;
+    }
+}
